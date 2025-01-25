@@ -4,10 +4,8 @@ class Program
 {
     static void Main()
     {
-        // Create a scripture library
         var scriptureLibrary = new ScriptureLibrary();
 
-        // Add multiple scriptures to the library
         scriptureLibrary.AddScripture(new Scripture(
             new Reference("John", "3", "16"),
             "For God so loved the world that he gave his only begotten Son"
@@ -23,7 +21,6 @@ class Program
             "I can do all things through Christ who strengthens me."
         ));
 
-        // Select a random scripture
         var scripture = scriptureLibrary.GetRandomScripture();
         scripture.DisplayScripture();
 
@@ -48,7 +45,6 @@ class Program
                 scripture.DisplayScripture();
             }
 
-            // If all words are hidden, end the program
             if (scripture.AllWordsHidden())
             {
                 Console.WriteLine("All words are hidden! Press Enter to exit.");

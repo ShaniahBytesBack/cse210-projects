@@ -13,7 +13,6 @@ public class Reference
         VerseEnd = null;
     }
 
-    // For a verse range, like "3:5-6", we can handle that format here.
     public Reference(string book, string chapter, string verse, string verseEnd)
     {
         Book = book;
