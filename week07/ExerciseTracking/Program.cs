@@ -125,16 +125,5 @@ class Program
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\nKeep up the great work! Stay active and healthy!");
         Console.ResetColor();
-
-        // Displaying a simple graphical summary
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("\nGraphical Representation (Calories Burned):");
-        Console.ResetColor();
-        
-        foreach (var activity in activities)
-        {
-            Console.Write($"{activity.GetType().Name}: ");
-            Console.WriteLine(new string('|', (int)(activity.GetCaloriesBurned() / 2))); // Simple bar graph
-        }
     }
 }
